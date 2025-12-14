@@ -3,3 +3,8 @@ steps:
   entrypoint: 'bash'
   args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
 timeout: '1600s'
+
+serviceAccount: 'projects/cloud-course-481212/serviceAccounts/cloud-course-481212@appspot.gserviceaccount.com'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
